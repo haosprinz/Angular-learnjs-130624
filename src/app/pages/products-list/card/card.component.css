@@ -1,0 +1,23 @@
+.card {
+  max-width: 400px;
+  background-color: gray;
+}
+
+.card-content {
+  padding: 16px 16px 0;
+}
+
+.card-star {
+  font-size: 14px;
+  color: yellow;
+}
+
+.card-price-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-price-text {
+  padding: 8px 0;
+}

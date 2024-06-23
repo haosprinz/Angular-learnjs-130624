@@ -1,0 +1,23 @@
+<mat-card class="card">
+    <img
+        mat-card-image
+        [style.height.px]="330"
+        [src]="product.images[0].url"
+        [alt]="product.images[0].source"
+    />
+    <mat-card-header>
+        <mat-card-title>{{ product.name }}</mat-card-title>
+    </mat-card-header>
+    <div class="card-content">
+        <span>
+            Рейтинг товара: {{ product.rating }}
+            <i class="card-star">&starf;</i>
+        </span>
+        <div class="card-price-block">
+            <span class="card-price-text">Цена товара: {{ product.price }} p.</span>
+            <mat-card-actions>
+                <button mat-button>Купить</button>
+            </mat-card-actions>
+        </div>
+    </div>
+</mat-card>
