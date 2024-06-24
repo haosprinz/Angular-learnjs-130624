@@ -5,11 +5,17 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {HeaderModule} from './components/header/header.module';
+import {ProductsListModule} from './pages/products-list/products-list.module';
 
 @NgModule({
-    declarations: [AppComponent], // const ...
-    imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, HeaderModule], // impor ... from '...'
-    exports: [], // module.export = {...}
+    declarations: [AppComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        HeaderModule,
+        ProductsListModule,
+    ],
     bootstrap: [AppComponent],
 })
 export class AppModule {}
