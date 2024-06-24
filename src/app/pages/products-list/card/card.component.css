@@ -9,6 +9,10 @@
   padding: 2px;
 }
 
+.card-title {
+  padding-bottom: 8px;
+}
+
 .card-content {
   padding: 16px 16px 0;
 }

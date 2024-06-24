@@ -6,9 +6,7 @@
         [alt]="product.images[0].source"
     />
     <div class="card-content">
-        <div [style.padding-bottom.px]="8">
-            <mat-card-title>{{ product.name }}</mat-card-title>
-        </div>
+        <mat-card-title class="card-title">{{ product.name }}</mat-card-title>
         <span>
             Рейтинг товара: {{ product.rating }}
             <i class="card-star">&starf;</i>
