@@ -9,8 +9,8 @@ import {productsMock} from '../../../shared/products/products.mock';
 export class CardComponent {
     readonly product = productsMock[0];
 
-    action(event: Event, productId: string) {
-        console.log(`Выбрали товар ${productId}`); // eslint-disable-line no-console
+    buy(event: Event) {
+        console.log(`Выбрали товар ${this.product._id}`); // eslint-disable-line no-console
         event.stopPropagation();
     }
 }
