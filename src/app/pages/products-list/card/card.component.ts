@@ -14,8 +14,8 @@ export class CardComponent {
     onProductBuy(event: Event) {
         event.stopPropagation();
 
-        if (this.product !== null) {
-            this.productBuy.emit(this.product?._id);
+        if (this.product) {
+            this.productBuy.emit(this.product._id);
         }
     }
 
